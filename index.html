@@ -192,6 +192,29 @@
             }
         }
         /* end of about us section */
+        /* footer starts*/
+        .footer{
+            padding-left: 7%;
+            font-size: 17px;
+            display: grid;
+            grid-template-columns: 75% 25%;
+            color: #858a93;
+            background-color: #1a1a1a;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        @media screen and (max-width: 860px){
+            .footer{
+                grid-template-columns: 100%;
+                padding-left: 15%;
+            }
+        }
+        @media screen and (max-width: 520px){
+            .footer{
+                padding-left: 5%;
+            }
+        }
+        /* footer ends */
     </style>
 </head>
 <body>
@@ -328,5 +351,19 @@
             </div>
         </div>
     </div>
+    <!-- footer starts -->
+    <div class="footer">
+        <div>
+            <p>Copyright © 2019 Brand Exponents. All Rights Reserved</p>
+        </div>
+        <div style="padding-top: 40px;">
+            <span style="padding-right: 15px;"><i class="fa fa-google-plus"></i></span>
+            <span style="padding-right: 15px;"><i class="fa fa-instagram"></i></span>
+            <span style="padding-right: 15px;"><i class="fa fa-linkedin-square"></i></span>
+            <span style="padding-right: 15px;"><i class="fa fa-skype"></i></span>
+            <span style="padding-right: 15px;"><i class="fa fa-twitter"></i></span>
+        </div>
+    </div>
+    <!-- footer ends -->
 </body>
 </html>
