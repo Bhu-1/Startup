@@ -16,6 +16,10 @@
             /* font-family: 'Roboto', sans-serif; */
             box-sizing: border-box;
         }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
         /* smallbzr classes */
         .bigCols2{
             display: grid;
@@ -170,6 +174,11 @@
             text-transform: uppercase;
             border-radius: 4px;
         }
+        .btn-sm:hover{
+            color:  rgba(23,129,241,1);
+            background-color: #ffffff;
+            transition: all .3s linear;
+        }
         .wrapper-btn-sm{
             margin-top: 40px;
         }
@@ -202,6 +211,13 @@
             background-color: #1a1a1a;
             padding-top: 25px;
             padding-bottom: 25px;
+        }
+        .fa-icon{
+            padding-right: 15px;
+        }
+        .fa-icon:hover{
+            color: #ffffff;
+            transition: all .3s linear;
         }
         @media screen and (max-width: 860px){
             .footer{
@@ -319,7 +335,7 @@
                     Our Support and Sales team is available 24 * 7 to answer your queries
                 </p>
                 <div class="wrapper-btn-sm">
-                    <button class="btn-sm">call us today</button>
+                    <button class="btn-sm"><a href="http://">call us today</a></button>
                 </div>
             </div>
         </div>
@@ -360,11 +376,11 @@
             <p>Copyright © 2019 Brand Exponents. All Rights Reserved</p>
         </div>
         <div class="footer-icon">
-            <span style="padding-right: 15px;"><i class="fa fa-google-plus"></i></span>
-            <span style="padding-right: 15px;"><i class="fa fa-instagram"></i></span>
-            <span style="padding-right: 15px;"><i class="fa fa-linkedin-square"></i></span>
-            <span style="padding-right: 15px;"><i class="fa fa-skype"></i></span>
-            <span style="padding-right: 15px;"><i class="fa fa-twitter"></i></span>
+            <a href="http://" class="fa-icon"><i class="fa fa-google-plus"></i></a>
+            <a href="http://" class="fa-icon"><i class="fa fa-instagram"></i></a>
+            <a href="http://" class="fa-icon"><i class="fa fa-linkedin-square"></i></a>
+            <a href="http://" class="fa-icon"><i class="fa fa-skype"></i></a>
+            <a href="http://" class="fa-icon"><i class="fa fa-twitter"></i></a>
         </div>
     </div>
     <!-- footer ends -->
