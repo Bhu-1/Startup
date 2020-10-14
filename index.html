@@ -124,7 +124,7 @@
                 background-repeat: no-repeat;
             }
         }
-        @media screen and (max-width: 400px){
+        @media screen and (max-width: 480px){
             .col1m,.col2m{
                 padding-left: 0;
             }
@@ -145,12 +145,11 @@
             grid-template-columns: 25% 25% 25% 25%;
             color: #ffffff;
             background-color: #222222;
+            padding-bottom: 50px;
         }
         .col4{
-            height: 400px;
-            border: 1px solid red;
             padding-top: 60px;
-            padding-right: 10px
+            padding-right: 65px
         }
         .col4-heading{
             font-size: 17px;
@@ -160,6 +159,37 @@
             line-height: 27px;
             font-size: 17.5px;
             margin-top: 45px;
+        }
+        .btn-sm{
+            background-color: rgba(23,129,241,1);
+            color: #ffffff;
+            width: 215px;
+            border: none;
+            height: 45px;
+            font-size: 15px;
+            text-transform: uppercase;
+            border-radius: 4px;
+        }
+        .wrapper-btn-sm{
+            margin-top: 40px;
+        }
+            /* media query for about us section */
+        @media screen and (max-width: 860px){
+            .wrp-abtus{
+                grid-template-columns: 50% 50%;
+                padding-left: 15%;
+            }
+        }
+
+        @media screen and (max-width: 480px){
+            .wrp-abtus{
+                grid-template-columns: 100%;
+                padding-left: 5%;
+            }
+            .col4{
+                padding-right: 11% !important;
+                padding-top: 50px !important;
+            }
         }
         /* end of about us section */
     </style>
@@ -252,7 +282,7 @@
                      Build your website using a fully visual interface.</p>
             </div>
         </div>
-        <div class="col4">
+        <div class="col4" style="padding-right: 50px;">
             <div class="col4-heading">
                 <h3>Work Hours</h3>
             </div>
@@ -262,9 +292,12 @@
                     <br>
                     Our Support and Sales team is available 24 * 7 to answer your queries
                 </p>
+                <div class="wrapper-btn-sm">
+                    <button class="btn-sm">call us today</button>
+                </div>
             </div>
         </div>
-        <div class="col4">
+        <div class="col4" style="padding-top: 30px;">
             <div class="col4-heading">
                 <h3>About Us</h3>
             </div>
@@ -281,7 +314,7 @@
                 </p>
             </div>
         </div>
-        <div class="col4">
+        <div class="col4" style="padding-top: 30px;">
             <div class="col4-heading">
                 <h3>Legal</h3>
             </div>
