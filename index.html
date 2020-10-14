@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fontawesome Link-->
+    <script src="https://kit.fontawesome.com/68d636f388.js" crossorigin="anonymous"></script>
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* font-family: 'Roboto', sans-serif; */
+            box-sizing: border-box;
+        }
+        /* smallbzr classes */
+        .bigCols2{
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        /* custom styling starts */
+        .wrapper{
+            width: 100%;
+            height: 890px;
+            background-image: url(/img/CTA-BG.jpg);
+        }
+        .rgtsec{
+            height: 300px;
+            border: 1px solid blueviolet;
+        }
+        .col1m{
+            padding-left: 15%;
+        }
+        .row1m{
+            width: 100%;
+            color: white;
+            margin-top: 181px;
+            font-size: 26px;
+        }
+        .row2m{
+            width: 100%;
+            line-height: 28px;
+            font-size: 19px;
+            background: transparent;
+            box-sizing: border-box;
+            color: rgba(132,137,145,1);
+            color: #d3d3d3;
+            padding-right: 30px;
+            padding-top: 30px;
+            padding-bottom: 55px;
+        }
+        .fav-icon, .cntcol1{
+            color: rgba(255,255,255,0.85);
+        }
+        .cntcol1{
+            margin-top: -30px;
+            margin-left: 62px;
+        }
+        /* form section css */
+
+        .inputbx1{
+            width: 100%;
+            height: 56px;
+            border: none;
+            color: rgba(255,255,255,0.7);
+            padding: 10px;
+            border-radius: 3px;
+            background: rgba(0,0,0,0.5);
+            font-size: 16px;
+            /* text-decoration: none; */
+            outline-color: #8ec0ea;
+        }
+        .col2m{
+            padding-top: 141px;
+            padding-left:30px;
+        }
+        .form-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .input-nm{
+            padding-left: 30px;
+            margin-top: 40px;
+            width: 40%;
+        }
+        .btmxl{
+            width: 100%;
+            height: 50px;
+            text-transform: uppercase;
+            border-radius: 21px;
+            text-decoration: none;
+            border: none;
+            color: white;
+            background: rgba(23,129,241,1);
+        }
+
+        /* media queries for get in touch and form section */
+        @media screen and (max-width: 860px) {
+            .bigCols2 {
+                display: grid;
+                grid-template-columns: 100%;
+            }
+            .row2m,.rowm{
+                padding-right: 26%;
+            }
+            /* form section media query */
+            .input-nm{
+                width: 80%;
+                padding-left: 0;
+            }
+            .col2m{
+                padding-top: 15px;
+                padding-left: 15%;
+            }
+            .wrapper{
+                height: 1425px;
+            }
+        }
+        @media screen and (max-width: 400px){
+            .col1m,.col2m{
+                padding-left: 0;
+            }
+            .row2m,.rowm,.row1m,.input-nm{
+                padding:5%;
+            }
+            .input-nm{
+                width: 100% !important;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bigCols2 wrapper">
+        <!-- get in touch section -->
+        <div class="col1m">
+            <div class="row1m">
+                <h2>Get in Touch</h2>
+            </div>
+            <div class="row2m">
+                <p>
+                    We love to listen and we are eagerly waiting to talk to you regarding your project. Get in touch with us if you have any queries and
+                     we will get back to you as soon as possible.
+                </p>
+            </div>
+            <div class="rowm">
+                <div class="fav-icon">
+                    <i class='far fa-map' style='font-size:35px; color: white;'></i>
+                </div>
+                <div class="cntcol1">
+                    <a href="http://" style="text-decoration: none;
+                    color: rgba(255,255,255,0.85); font-size: 18px;">Visit Us</a>
+                    <p style="padding-top: 12px;
+                    font-size: 20px;
+                    color: rgba(255,255,255,0.7);">Express Chambers II Spaces Works, Level 5, Royapettah, Chennai – 600014</p>
+                </div>
+
+                <div class="fav-icon" style="margin-top: 45px;">
+                    <i class='fa fa-headphones' style='font-size:35px; color: white;'></i>
+                </div>
+                <div class="cntcol1">
+                    <a href="http://" style="text-decoration: none;
+                    color: rgba(255,255,255,0.85); font-size: 18px;">Call Us</a>
+                    <p style="padding-top: 12px;
+                    font-size: 20px;
+                    color: rgba(255,255,255,0.7);">+001-987-654-3210</p>
+                </div>
+
+                <div class="fav-icon" style="margin-top: 45px;">
+                    <i class='fa fa-envelope' style='font-size:35px; color: white;'></i>
+                </div>
+                <div class="cntcol1">
+                    <a href="http://" style="text-decoration: none;
+                    color: rgba(255,255,255,0.85); font-size: 18px;">Email Us</a>
+                    <p style="padding-top: 12px;
+                    font-size: 20px;
+                    color: rgba(255,255,255,0.7);">help@brandexponents.com</p>
+                </div>
+                
+            </div>
+        </div>
+        <!-- form section -->
+        <div class="col2m">
+            <form action="">
+                <div class="form-wrapper">
+                    <div class="input-nm">
+                        <input type="text" name="" id="" placeholder="Name" class="inputbx1">
+                    </div>
+                    <div class="input-nm">
+                        <input type="text" name="" id="" placeholder="Email" class="inputbx1">
+                    </div>
+                    <div class="input-nm" style="width: 80%;">
+                        <input type="text" name="" id="" placeholder="Subject" class="inputbx1">
+                    </div>
+                    <div class="input-nm"  style="width: 80%;">
+                        <textarea name="" id="" cols="30" rows="10" class="inputbx1" style="height: 200px;" placeholder="Message"></textarea>
+                    </div>
+                    <div class="input-nm"  style="width: 80%;">
+                        <button type="submit" class="btmxl">Submit</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
