@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- fontawesome Link-->
     <script src="https://kit.fontawesome.com/68d636f388.js" crossorigin="anonymous"></script>
-    <!-- google font link -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
     <style>
@@ -20,19 +18,16 @@
         *{
             margin: 0;
             padding: 0;
-            /* font-family: 'Roboto', sans-serif; */
             box-sizing: border-box;
         }
         a{
             text-decoration: none;
             color: inherit;
         }
-        /* smallbzr classes */
         .bigCols2{
             display: grid;
             grid-template-columns: 50% 50%;
         }
-        /* custom styling starts */
         .wrapper{
             width: 100%;
             height: 890px;
@@ -71,8 +66,6 @@
             margin-top: -30px;
             margin-left: 62px;
         }
-        /* form section css */
-
         .inputbx1{
             width: 100%;
             height: 56px;
@@ -82,8 +75,12 @@
             border-radius: 3px;
             background: rgba(0,0,0,0.5);
             font-size: 16px;
-            /* text-decoration: none; */
-            outline-color: #8ec0ea;
+            outline: none;
+            transition-property: border;
+            transition-timing-function: ease-in-out;
+        }
+        .inputbx1:focus{
+            border: 1px solid #1981f0;
         }
         .col2m{
             padding-top: 141px;
@@ -98,7 +95,7 @@
             margin-top: 40px;
             width: 40%;
         }
-        .btmxl{
+        .btnxl{
             width: 100%;
             height: 50px;
             text-transform: uppercase;
@@ -107,9 +104,13 @@
             border: none;
             color: white;
             background: rgba(23,129,241,1);
+            outline: none;
         }
-
-        /* media queries for get in touch and form section */
+        .btnxl:hover{
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.39);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        
         @media screen and (max-width: 860px) {
             .bigCols2 {
                 display: grid;
@@ -118,7 +119,7 @@
             .row2m,.rowm{
                 padding-right: 26%;
             }
-            /* form section media query */
+    
             .input-nm{
                 width: 80%;
                 padding-left: 0;
@@ -126,8 +127,9 @@
             .col2m{
                 padding-top: 15px;
                 padding-left: 15%;
-                /* margin-top: -155px; */
+                
                 padding-bottom: 110px;
+    
             }
             .wrapper{
                 height: auto;
@@ -147,9 +149,7 @@
                 margin-top: 0;
             }
         }
-        /* end of form section */
-
-        /* styling of about us section */
+        
         .wrp-abtus{
             display: grid;
             padding-left: 7%;
@@ -189,7 +189,7 @@
         .wrapper-btn-sm{
             margin-top: 40px;
         }
-            /* media query for about us section */
+        
         @media screen and (max-width: 860px){
             .wrp-abtus{
                 grid-template-columns: 50% 50%;
@@ -207,8 +207,7 @@
                 padding-top: 50px !important;
             }
         }
-        /* end of about us section */
-        /* footer starts*/
+        
         .footer{
             padding-left: 7%;
             font-size: 17px;
@@ -240,13 +239,10 @@
                 padding-left: 5%;
             }
         }
-        /* footer ends */
     </style>
 </head>
 <body>
-    <!-- get in touch and form section statrs -->
     <div class="bigCols2 wrapper">
-        <!-- get in touch section -->
         <div class="col1m">
             <div class="row1m">
                 <h2>Get in Touch</h2>
@@ -293,7 +289,7 @@
                 
             </div>
         </div>
-        <!-- form section -->
+        
         <div class="col2m">
             <form action="">
                 <div class="form-wrapper">
@@ -310,16 +306,14 @@
                         <textarea name="" id="" cols="30" rows="10" class="inputbx1" style="height: 200px;" placeholder="Message"></textarea>
                     </div>
                     <div class="input-nm"  style="width: 80%;">
-                        <button type="submit" class="btmxl">Submit</button>
+                        <button type="submit" class="btnxl">Submit</button>
                     </div>
 
                 </div>
             </form>
         </div>
     </div>
-    <!-- get in touch and form section statrs -->
-
-    <!-- work hour and about us starts -->
+    
     <div class="wrp-abtus">
         <div class="col4">
             <div class="col4-heading">
@@ -377,7 +371,6 @@
             </div>
         </div>
     </div>
-    <!-- footer starts -->
     <div class="footer">
         <div>
             <p>Copyright © 2019 Brand Exponents. All Rights Reserved</p>
@@ -390,6 +383,5 @@
             <a href="http://" class="fa-icon"><i class="fa fa-twitter"></i></a>
         </div>
     </div>
-    <!-- footer ends -->
 </body>
 </html>
