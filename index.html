@@ -220,6 +220,55 @@
                 padding-top: 40px;
             }
         }
+
+        /* icon section */
+        .hv-icon{
+            display: inline-block;
+            background-color: #ffffff;
+            display: inline-block;
+            width: 46px;
+            height: 44px;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s;
+            border-radius: 30px;
+            padding: 7px;
+            margin: 12px;
+        }
+        .hv-icon-hndlr{
+            background-color: #ffffff;
+            display: inline-block;
+            width: 69px;
+            height: 66px;
+            border: 1px solid #7cb342;
+            border-radius: 95px;
+            padding: 8px
+        }
+        .hover-icon{
+            margin-left: 20px;
+            position: fixed;
+            top: 75%;
+            transform: translateY(-55%);
+            width: 174px;
+        }
+
+        .hover-icon:hover  .hv-icon {
+            visibility: visible; 
+            opacity: 1;
+        }
+        .toolpit{
+            display: none;
+            background-color: black;
+            color: white;
+            height: 32px;
+            text-align: center;
+            padding-top: 5px;
+            width: 100px;
+            border-radius: 7px;
+        }
+        .hv-icon-wrapper:nth-child(1n):hover .toolpit{
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -354,5 +403,34 @@
             <a href="http://" class="fa-icon"><i class="fa fa-twitter"></i></a>
         </div>
     </div>
+
+    <section class="hover-icon">
+        <div class="hv-icon-wrapper">
+            <div class="hv-icon">
+                <a href=""><img src="back.png" alt="" style="width: 30px;"></a>
+            </div>
+            <div class="toolpit">View more</div>
+        </div>
+        <div class="hv-icon-wrapper">
+            <div class="hv-icon">
+                <a href=""><img src="cart.png" alt="" style="width: 30px;"></a>
+            </div>
+            <div class="toolpit">Get support</div>
+        </div>
+        <div class="hv-icon-wrapper">
+            <div class="hv-icon">
+                <a href=""><img src="email.png" alt="" style="width: 30px;"></a>
+            </div>
+            <div class="toolpit">Buy theme</div>
+        </div>
+        <div class="hv-icon-wrapper">
+            <div class="hv-icon-hndlr">
+                <a href="">
+                    <img src="envato.png" alt="" srcset="" style="width: 45px;">
+                </a>
+            </div>
+            <div class="toolpit">Buy theme</div>
+        </div>
+    </section>
 </body>
 </html>
