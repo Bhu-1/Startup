@@ -269,9 +269,55 @@
         .hv-icon-wrapper:nth-child(1n):hover .toolpit{
             display: inline-block;
         }
+        .header{
+            background-position: right;
+            background-size: cover;
+            background-image: url(Hero-Copy.jpg);
+            position: relative;
+            box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+        }
+        .ft-heading{
+            color: #ffff;
+            font-size: 30px;
+            width: 50%;
+            padding-top: 150px;
+        }
+        .ft-txt{
+            color: rgba(255,255,255,0.7);
+            width: 50%;
+            font-size: 20px;
+            padding-top: 30px;
+            line-height: 30px;
+        }
+        @media screen and (max-width: 860px){
+            .ft-heading, .ft-txt{
+                width: 100%;
+            }
+            .header{
+                background-position: top;
+            }
+        }
     </style>
 </head>
 <body>
+<!-- header starts here -->
+    <header class="wrapper header">
+        <div class="ft-heading">
+            <h1>The Future of Innovation is now</h1>
+        </div>
+        <div class="ft-txt">
+            <p>Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Beatae odit reprehenderit 
+                quisquam veniam deserunt nesciunt voluptatem veritatis quaerat sit reiciendis?
+            </p>
+        </div>
+        <div class="wrapper-btn-sm" style="padding-bottom: 100px;">
+            <button class="btn-sm"><a href="http://">about us</a></button>
+        </div>
+    </header>
+
+<!-- header ends here -->
+
     <div class="bigCols2 wrapper bg-img">
         <div class="col1m">
             <div class="row1m">
