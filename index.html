@@ -300,6 +300,68 @@
                 background-position: top;
             }
         }
+        /* second section  */
+        .ov-cnt{
+            display: grid;
+            grid-template-columns: repeat(3,33.33%);
+            padding: 8% 0% 8% 7%;
+        }
+        .overlay-wrp{
+            padding: 120px 15px 30px;
+            width: auto;
+            height: 380px;
+            background-color: #f2f3f5;
+        }
+        .overlay-icon{
+            color: rgba(22,121,230,1);
+            font-size: 40px;
+            padding-bottom: 20px;
+            opacity: 1;
+            transition: opacity .4s;
+        }
+        .overlay-title{
+            font-size: 22px;
+            padding-bottom: 12px;
+        }
+        .overlay-txt{
+            font-size: 18px;
+            line-height: 30px;
+            color: #8b8f92;
+            transition: ease-out .4s;
+        }
+        .overlay-wrp:hover{
+            background: linear-gradient(45deg, rgba(59,189,252,1) 0%, rgba(22,121,230,1) 100%);
+        }
+        .overlay-container{
+            position: relative;
+            overflow: hidden;
+            transform: translateY(20%);
+            transition: ease-out .4s;
+        }
+        .overlay-wrp:hover .overlay-container{
+            transform: translateY(-20%);
+            overflow: hidden;
+            color: #ffffff;
+        }
+        .overlay-wrp:hover .overlay-txt{
+            color: #ffffff !important;
+        }
+        .overlay-wrp:hover .overlay-icon{
+            /* visibility: hidden; */
+            opacity: 0;
+        }
+        .overlay-arrow{
+            padding-top: 30px;
+            color: #ffffff;
+            position: relative;
+            opacity: 0;
+            transition: ease-out .4s;
+        }
+        .overlay-wrp:hover .overlay-arrow{
+            transform: translateY(-40%);
+            overflow: hidden;
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -320,7 +382,123 @@
     </header>
 
 <!-- header ends here -->
+<!-- second section starts here -->
+    <div class="ov-cnt">
+        <div style="padding: 20px 20px 20px 0px;">
+            <div class="overlay-wrp">
+                <div class="overlay-container">
+                    <div class="overlay-icon">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                            <g>
+                            <rect x="16" y="1" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="32" height="62" />
+                            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="28" y1="5" x2="36" y2="5" />
+                            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="51" x2="48" y2="51" />
+                            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="9" x2="48" y2="9" />
+                            <circle fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" cx="32" cy="57" r="2" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="overlay-title">
+                        <span>Mobile Apps</span>
+                    </div>
+                    <div class="overlay-txt">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, dolores.</span>
+                    </div>
+                </div>
+                <div class="overlay-arrow">
+                    <span style="font-size: 25px;"><i class="fa fa-arrow-right"></i></span>
+                </div>
+            </div>
 
+            <div class="overlay-wrp" style="margin-top: 45px;">
+                <div class="overlay-container">
+                    <div class="overlay-icon">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                            <g>
+                            <rect x="16" y="1" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="32" height="62" />
+                            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="28" y1="5" x2="36" y2="5" />
+                            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="51" x2="48" y2="51" />
+                            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="9" x2="48" y2="9" />
+                            <circle fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" cx="32" cy="57" r="2" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="overlay-title">
+                        <span>Mobile Apps</span>
+                    </div>
+                    <div class="overlay-txt">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, dolores.</span>
+                    </div>
+                </div>
+                <div class="overlay-arrow">
+                    <span style="font-size: 25px;"><i class="fa fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 20px;">
+            <div class="overlay-wrp">
+                <div class="overlay-container">
+                    <div class="overlay-icon">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                            <g>
+                            <rect x="16" y="1" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="32" height="62" />
+                            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="28" y1="5" x2="36" y2="5" />
+                            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="51" x2="48" y2="51" />
+                            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="9" x2="48" y2="9" />
+                            <circle fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" cx="32" cy="57" r="2" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="overlay-title">
+                        <span>Mobile Apps</span>
+                    </div>
+                    <div class="overlay-txt">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, dolores.</span>
+                    </div>
+                </div>
+                <div class="overlay-arrow">
+                    <span style="font-size: 25px;"><i class="fa fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="overlay-wrp" style="margin-top: 45px;">
+                <div class="overlay-container">
+                    <div class="overlay-icon">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                            <g>
+                            <rect x="16" y="1" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="32" height="62" />
+                            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="28" y1="5" x2="36" y2="5" />
+                            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="51" x2="48" y2="51" />
+                            <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="16" y1="9" x2="48" y2="9" />
+                            <circle fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" cx="32" cy="57" r="2" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="overlay-title">
+                        <span>Mobile Apps</span>
+                    </div>
+                    <div class="overlay-txt">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, dolores.</span>
+                    </div>
+                </div>
+                <div class="overlay-arrow">
+                    <span style="font-size: 25px;"><i class="fa fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+        <div style="border: 1px solid green; padding: 50px;">
+            <div>
+                <h2>We can take your bussiness online</h2>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis suscipit corrupti ab obcaecati eum, eaque dignissimos repudiandae eveniet perspiciatis id incidunt quas voluptate exercitationem?</p>
+            </div>
+            <div>
+               <button>View More</button>
+            </div>
+        </div>
+    </div>
+<!-- second section ends -->
     <div class="bigCols2 wrapper bg-img">
         <div class="col1m">
             <div class="row1m">
