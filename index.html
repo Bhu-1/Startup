@@ -451,63 +451,71 @@
             }
         }
         /* fourth section */
-        
-        .pf-cnt{
-            width: 88%;
+        .cells-3m{
+            display: grid;
+            grid-template-columns: repeat(3,33.33%);
+            padding-left: 7%;
+            margin-bottom: 80px;
+        }
+        .cnt-pf{
+            width: 100%;
             height: 360px;
-            /* position:absolute; */
+            padding-right: 40px;
+            margin-bottom: 40px;
+        } 
+        .cnt-pf-bg{
+            width: 100%;
+            height: 360px;
             background-image: url(/Thumb.jpg);
             background-repeat: no-repeat;
-            background-size: 100%;
-        }
-        .pf-ov{
+            background-size: 100% 100%;
+        }  
+        .cnt-pf-ov{
+            width: 100%;
+            height: 360px;
+            margin-top: -360px;
+            color: #ffffff;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            color: #ffffff;
             align-items: center;
-            width: 90%;
-            height: 360px;
-            margin-top: -360px;
-            border: 15px solid rgba(23,129,241,1);;
+            border: 10px solid rgba(23,129,241,1);;
             opacity: 0;
             transition-property: transform, scale, opacity;
             transition-duration: 0.7s, 0.7s, 0.7s;
             transition-timing-function: ease, ease, ease;
         }
-        .pf-ov:hover{
+        .cnt-pf-ov-title{
+            font-size: 32px;
+            line-height: 32px;
+            font-weight: 600;
+            font-style: normal;
+            transition: all .4s cubic-bezier(.12,.65,.4,1);
+        }
+        .cnt-pf-ov:hover{
             opacity: 1;
             box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
         }
-        .pf-cnt-txt{
+        .cnt-pf-ov-txt{
+            font-size: 13px;
             transform: translateY(140px);
             transition: all 0.7s ease-out;
         }
-        .pf-ov:hover .pf-cnt-txt {
+        .cnt-pf-ov:hover .cnt-pf-ov-txt{
             transform: translateY(120px);
         }
-        .cell-3m{
-           display: grid;
-           grid-template-columns: repeat(3,33.33%);
-           padding: 0 0% 0 7%; 
-        }
         @media screen and (max-width: 860px){
-            .cell-3m{
+            .cells-3m{
                 grid-template-columns: 50% 50%;
-            }
-            .pf-cnt{
-                width: 39%;
             }
         }
         @media screen and (max-width: 520px){
-            .cell-3m{
+            .cells-3m{
                 grid-template-columns: 100%;
+                padding-right: 7%;
             }
-            .pf-cnt{
-                width: 86%;
-            }
-            .pf-ov{
-                width: 100%;
+            .cnt-pf{
+                padding-right: 0px;
             }
         }
     </style>
@@ -653,68 +661,68 @@
     </div>
 <!-- third section ends -->
 <!-- fourth section starts -->
-<div class="cell-3m">
-    <div style="margin-top: 60px;">
-        <div class="pf-cnt">
-        </div>
-        <div class="pf-ov">
-            <h1>Autonomous</h1>
-            <div class="pf-cnt-txt">
-                <p>BRANDING. PHOTOGRAPHY</p>
+   <div class="cells-3m">
+        <div class="cnt-pf">
+            <div class="cnt-pf-bg">
+            </div>
+            <div class="cnt-pf-ov">
+                <div class="cnt-pf-ov-title">Autonomous</div>
+                <div class="cnt-pf-ov-txt">
+                    <p>BRANDING. PHOTOGRAPHY</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div style="margin-top: 60px;">
-        <div class="pf-cnt">
-        </div>
-        <div class="pf-ov">
-            <h1>Autonomous</h1>
-            <div class="pf-cnt-txt">
-                <p>BRANDING. PHOTOGRAPHY</p>
+        <div class="cnt-pf">
+            <div class="cnt-pf-bg" style="background-image: url(/Thumb-2.jpg);">
+            </div>
+            <div class="cnt-pf-ov">
+                <h1>Concepts</h1>
+                <div class="cnt-pf-ov-txt">
+                    <p>PHOTOGRAPHY</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div style="margin-top: 60px;">
-        <div class="pf-cnt">
-        </div>
-        <div class="pf-ov">
-            <h1>Autonomous</h1>
-            <div class="pf-cnt-txt">
-                <p>BRANDING. PHOTOGRAPHY</p>
+        <div class="cnt-pf">    
+            <div class="cnt-pf-bg" style="background-image: url(/Thumb-1.jpg);">
+            </div>
+            <div class="cnt-pf-ov">
+                <h1>Impulse</h1>
+                <div class="cnt-pf-ov-txt">
+                    <p>MOBILE. WEB</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div style="margin-top: 60px;">
-        <div class="pf-cnt">
-        </div>
-        <div class="pf-ov">
-            <h1>Autonomous</h1>
-            <div class="pf-cnt-txt">
-                <p>BRANDING. PHOTOGRAPHY</p>
+        <div class="cnt-pf">
+            <div class="cnt-pf-bg" style="background-image: url(/Thumb-3.jpg);">
+            </div>
+            <div class="cnt-pf-ov">
+                <h1>Pegasus</h1>
+                <div class="cnt-pf-ov-txt">
+                    <p>BRANDING. WEB</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div style="margin-top: 60px;">
-        <div class="pf-cnt">
-        </div>
-        <div class="pf-ov">
-            <h1>Autonomous</h1>
-            <div class="pf-cnt-txt">
-                <p>BRANDING. PHOTOGRAPHY</p>
+        <div class="cnt-pf">
+            <div class="cnt-pf-bg" style="background-image: url(/Thumb-4.jpg);">
+            </div>
+            <div class="cnt-pf-ov">
+                <h1>Aqua</h1>
+                <div class="cnt-pf-ov-txt">
+                    <p>BRANDING. WEB</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div style="margin-top: 60px;">
-        <div class="pf-cnt">
-        </div>
-        <div class="pf-ov">
-            <h1>Autonomous</h1>
-            <div class="pf-cnt-txt">
-                <p>BRANDING. PHOTOGRAPHY</p>
+        <div class="cnt-pf">
+            <div class="cnt-pf-bg" style="background-image: url(/Thumb-5.jpg);">
+            </div>
+            <div class="cnt-pf-ov">
+                <h1>Illustrations</h1>
+                <div class="cnt-pf-ov-txt">
+                    <p>PHOTOGRAPHY</p>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+   </div>
 <!-- fourth section ends -->
     <div class="bigCols2 wrapper bg-img">
         <div class="col1m">
