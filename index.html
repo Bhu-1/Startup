@@ -450,6 +450,66 @@
                 line-height: 22px;
             }
         }
+        /* fourth section */
+        
+        .pf-cnt{
+            width: 88%;
+            height: 360px;
+            /* position:absolute; */
+            background-image: url(/Thumb.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .pf-ov{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #ffffff;
+            align-items: center;
+            width: 90%;
+            height: 360px;
+            margin-top: -360px;
+            border: 15px solid rgba(23,129,241,1);;
+            opacity: 0;
+            transition-property: transform, scale, opacity;
+            transition-duration: 0.7s, 0.7s, 0.7s;
+            transition-timing-function: ease, ease, ease;
+        }
+        .pf-ov:hover{
+            opacity: 1;
+            box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+        }
+        .pf-cnt-txt{
+            transform: translateY(140px);
+            transition: all 0.7s ease-out;
+        }
+        .pf-ov:hover .pf-cnt-txt {
+            transform: translateY(120px);
+        }
+        .cell-3m{
+           display: grid;
+           grid-template-columns: repeat(3,33.33%);
+           padding: 0 0% 0 7%; 
+        }
+        @media screen and (max-width: 860px){
+            .cell-3m{
+                grid-template-columns: 50% 50%;
+            }
+            .pf-cnt{
+                width: 39%;
+            }
+        }
+        @media screen and (max-width: 520px){
+            .cell-3m{
+                grid-template-columns: 100%;
+            }
+            .pf-cnt{
+                width: 86%;
+            }
+            .pf-ov{
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -592,6 +652,70 @@
         </div>
     </div>
 <!-- third section ends -->
+<!-- fourth section starts -->
+<div class="cell-3m">
+    <div style="margin-top: 60px;">
+        <div class="pf-cnt">
+        </div>
+        <div class="pf-ov">
+            <h1>Autonomous</h1>
+            <div class="pf-cnt-txt">
+                <p>BRANDING. PHOTOGRAPHY</p>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 60px;">
+        <div class="pf-cnt">
+        </div>
+        <div class="pf-ov">
+            <h1>Autonomous</h1>
+            <div class="pf-cnt-txt">
+                <p>BRANDING. PHOTOGRAPHY</p>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 60px;">
+        <div class="pf-cnt">
+        </div>
+        <div class="pf-ov">
+            <h1>Autonomous</h1>
+            <div class="pf-cnt-txt">
+                <p>BRANDING. PHOTOGRAPHY</p>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 60px;">
+        <div class="pf-cnt">
+        </div>
+        <div class="pf-ov">
+            <h1>Autonomous</h1>
+            <div class="pf-cnt-txt">
+                <p>BRANDING. PHOTOGRAPHY</p>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 60px;">
+        <div class="pf-cnt">
+        </div>
+        <div class="pf-ov">
+            <h1>Autonomous</h1>
+            <div class="pf-cnt-txt">
+                <p>BRANDING. PHOTOGRAPHY</p>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 60px;">
+        <div class="pf-cnt">
+        </div>
+        <div class="pf-ov">
+            <h1>Autonomous</h1>
+            <div class="pf-cnt-txt">
+                <p>BRANDING. PHOTOGRAPHY</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- fourth section ends -->
     <div class="bigCols2 wrapper bg-img">
         <div class="col1m">
             <div class="row1m">
