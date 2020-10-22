@@ -524,6 +524,7 @@
             grid-template-columns: 40% 60%;
             padding: 0 0 8% 7%;
             background-color: #fafbfd;
+            z-index: 400;
         }
         .recg-txt{
             font-size: 21px;
@@ -541,6 +542,29 @@
             padding-left: 25px;
             padding-top: 177px;
         }
+        .recg-btn{
+            font-size: 20px;
+            padding-top: 35px;
+            padding-bottom: 30px;
+            color: rgba(23,129,241,1);
+            width: 130px;
+        }
+       .recg-btn-title{
+            display: inline-block;
+       }
+       .recg-btn-svg{
+            display: inline-block;
+            overflow: hidden;
+            margin-left: -6px;
+            position: relative;
+            top: 7px;
+            visibility: hidden;
+            transition: all .4s ease;
+       }
+       .recg-btn:hover .recg-btn-svg{
+            visibility: visible;
+            margin-left: 3px;
+       }
         @media screen and (max-width: 1080px){
             .wrp-recg{
                 grid-template-columns: 100%;
@@ -775,7 +799,17 @@
                 <p>Over 30 high quality professionally designed pre-built website concepts to choose from. Build your website using a fully visual interface, using our revolutionary page & header builder.</p>
             </div>
             <div class="recg-btn">
-                <span>Contact Us</span>
+                <a href="">
+                    <div class="recg-btn-title">Contact Us</div>
+                    <div class="recg-btn-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="15px" viewBox="0 0 30 18" enable-background="new 0 0 30 18" xml:space="preserve">
+                            <path class="tatsu-svg-arrow-head" fill="rgba(23,129,241,1)" d="M20.305,16.212c-0.407,0.409-0.407,1.071,0,1.479s1.068,0.408,1.476,0l7.914-7.952c0.408-0.409,0.408-1.071,0-1.481
+                                            l-7.914-7.952c-0.407-0.409-1.068-0.409-1.476,0s-0.407,1.071,0,1.48l7.185,7.221L20.305,16.212z"></path>
+                            <path class="tatsu-svg-arrow-bar" fill-rule="evenodd" clip-rule="evenodd" fill="rgba(23,129,241,1)" d="M1,8h28.001c0.551,0,1,0.448,1,1c0,0.553-0.449,1-1,1H1c-0.553,0-1-0.447-1-1
+                                            C0,8.448,0.447,8,1,8z"></path>
+                        </svg>
+                    </div>
+                </a>
             </div>
         </div>
         <div  class="recg-rg">
@@ -797,7 +831,16 @@
         </div>
    </div>
 <!-- fifth section ends -->
-
+<!-- sixth section starts here -->
+    <div class="lg-row" style="border: none;">
+        <div>
+            <h1>Other Services</h1>
+        </div>
+        <div class="lg-rw-txt">
+            <p>The people who made it happen and will continue to push this company forward for more success</p>
+        </div>
+    </div>
+<!-- sixth section ends here -->
     <div class="bigCols2 wrapper bg-img">
         <div class="col1m">
             <div class="row1m">
