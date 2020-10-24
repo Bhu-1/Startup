@@ -616,6 +616,44 @@
             text-align: center;
             padding-right: 100px;
         }
+        .cells-4m{
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(4,25%);
+            padding: 0 0 0 7%;
+        }
+        @media screen and (max-width: 1080px){
+            .cells-4m{
+                grid-template-columns: 50% 50%;
+            }
+        }
+        
+        .cnt-ppl-ov{
+            padding-top: 12px;
+            transform: translateY(-49px);
+            text-align: center;
+            height: 45px;
+            background-color: #1981f0;
+            opacity: 0;
+            transition-property: transform, scale, opacity;
+            transition-duration: 0.7s, 0.7s, 0.7s;
+            transition-timing-function: ease, ease, ease;
+        }
+        .cnt-ppl-wrppr{
+            margin-right: 40px;
+        }
+        .cnt-ppl-wrppr:hover .cnt-ppl-ov{
+            opacity: 1;
+        }
+        @media screen and (max-width: 580px){
+            .cells-4m{
+                grid-template-columns: 100%;
+                padding: 0 7% 0 7%;
+            }
+            .cnt-ppl-wrppr{
+                margin-right: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -981,6 +1019,130 @@
         margin-right: 50px;"></div>
 </div>
 <!-- seventh section ends -->
+<!-- eight section starts -->
+<div class="lg-row" style="border: none;">
+    <div>
+        <h1>Our People</h1>
+    </div>
+    <div class="lg-rw-txt">
+        <p>The people who make things happen in our company and who believe and build the future.</p>
+    </div>
+</div>
+<div class="cells-4m">
+    <div class="cnt-ppl">
+        <div class="cnt-ppl-wrppr">
+            <img src="Team-1-1.jpg" alt="" style="width: 100%;">
+            <div class="cnt-ppl-ov">
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <h3 style="margin-top: -35px;">Justim Hammer</h3>
+        <p style="margin: 8px 0px 30px;
+        color: #888888; font-size: 15px;">FOUNDER & CEO</p>
+    </div>
+    <div class="cnt-ppl">
+        <div class="cnt-ppl-wrppr">
+            <img src="download-2.jpg" alt="" style="width: 100%;">
+            <div class="cnt-ppl-ov">
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <h3 style="margin-top: -35px;">Jessica Jones</h3>
+        <p style="margin: 8px 0px 30px;
+        color: #888888; font-size: 15px;">DATA SCIENTIST</p>
+    </div>
+    <div class="cnt-ppl">
+        <div class="cnt-ppl-wrppr">
+            <img src="download-3.jpg" alt="" style="width: 100%;">
+            <div class="cnt-ppl-ov">
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <h3 style="margin-top: -35px;">Barbara</h3>
+        <p style="margin: 8px 0px 30px;
+        color: #888888; font-size: 15px;">DEVELOPER</p>
+    </div>
+    <div class="cnt-ppl">
+        <div class="cnt-ppl-wrppr">
+            <img src="download-4.jpg" alt="" style="width: 100%;">
+            <div class="cnt-ppl-ov">
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <h3 style="margin-top: -35px;">Rebacca</h3>
+        <p style="margin: 8px 0px 30px;
+        color: #888888; font-size: 15px;">UI / UX Designer</p>
+    </div>
+    <div class="cnt-ppl">
+        <div class="cnt-ppl-wrppr">
+            <img src="download-5.jpg" alt="" style="width: 100%;">
+            <div class="cnt-ppl-ov">
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <h3 style="margin-top: -35px;">Jason Roy</h3>
+        <p style="margin: 8px 0px 30px;
+        color: #888888; font-size: 15px;">DEVELOPER</p>
+    </div>
+    <div class="cnt-ppl">
+        <div class="cnt-ppl-wrppr">
+            <img src="download-6.jpg" alt="" style="width: 100%;">
+            <div class="cnt-ppl-ov">
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <h3 style="margin-top: -35px;">Katherine</h3>
+        <p style="margin: 8px 0px 30px;
+        color: #888888; font-size: 15px;">SALES & MARKETING</p>
+    </div>
+    <div class="cnt-ppl">
+        <div class="cnt-ppl-wrppr">
+            <img src="Team-7.jpg" alt="" style="width: 100%;">
+            <div class="cnt-ppl-ov">
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <h3 style="margin-top: -35px;">John</h3>
+        <p style="margin: 8px 0px 30px;
+        color: #888888; font-size: 15px;">SYSTEM ARCHITECT</p>
+    </div>
+    <div class="cnt-ppl">
+        <div class="cnt-ppl-wrppr">
+            <img src="download-7.jpg" alt="" style="width: 100%;">
+            <div class="cnt-ppl-ov">
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <h3 style="margin-top: -35px;">Natasha</h3>
+        <p style="margin: 8px 0px 30px;
+        color: #888888; font-size: 15px;">CUSTOMER SUPPORT</p>
+    </div>
+</div>
+<!-- eight section ends -->
     <div class="bigCols2 wrapper bg-img">
         <div class="col1m">
             <div class="row1m">
