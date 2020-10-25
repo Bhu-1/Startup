@@ -654,6 +654,136 @@
                 margin-right: 0;
             }
         }
+        .customer-card{
+            display: flex;
+            flex-wrap: wrap;
+            box-shadow: 20px 20px 50px #cacaca;
+            margin: 0 12% 70px 12%;
+        }
+        .card-left{
+            width: 50%;
+            background-image: url(Testimonial-IMG-1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .card-right{
+            width: 50%;
+            padding: 65px 40px 65px 50px;
+        }
+        @media screen and (max-width:800px){
+            .card-left, .card-right{
+                width: 100%;
+            }
+            .card-left{
+                height: 500px;
+            }
+        }
+        @media screen and (max-width: 580px){
+            .customer-card{
+                margin: 0px 2% 70px 2% ;
+            }
+        }
+        .accordion{
+            width: 40%;
+            
+            margin-left: 50px;
+
+        }
+        .accordion-tab{
+            border: 1px solid #a5a9ac;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+        .accordion-tab > label:hover{
+            color: rgba(23,129,241,1);
+        }
+
+        .accordion-tab > label:after{
+            content: "\f078";
+            font-family: fontawesome;
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            transform: rotate(90deg);
+            transition: transform .3s;
+        }
+        .accordion-tab > .accordion-toggle:checked ~ label:after{
+            transform: rotate(0deg);
+        }
+        .accordion-tab .accordion-toggle{
+            display: none;
+        }
+        .accordion-tab >label{
+            font-size: 19px;
+            font-weight: bold;
+            line-height: 24px;
+            position: relative;
+            display: block;
+            padding: 20px 20px;
+            color: rgba(49,50,51,1);
+            cursor: pointer;
+        }
+        .accordion-tab > .accordion-content{
+            max-height: 0px;
+            padding: 0 20px 0px;
+            font-size: 20px;
+            color: #797b7d;
+            transition: all .4s;
+            overflow: hidden;
+
+        }
+        .accordion-tab > .accordion-toggle:checked ~ .accordion-content{
+            max-height: 100vh; 
+            padding-bottom: 20px;   
+       
+        }
+        @media screen and (max-width: 1080px){
+            .accordion{
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+
+        .card{
+            width: 90%;
+            height: 350px;
+            position: relative;
+            transition: all .4s;
+        }
+        .img-card{
+            position: relative;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .img-card > img{
+            transition: all .4s linear;
+            opacity: 0;
+        }
+        .txt-card{
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: -350px;
+            position: relative;
+            z-index: 100;
+            align-items: center;
+            justify-content: center;
+        }
+        .card:hover .img-card > img{
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        .card:hover .txt-card{
+            color: #ffffff;
+        }
+        .card:hover{
+            box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+        }
+        @media screen and (max-width: 860px){
+            .card{
+                width: 75%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -995,154 +1125,323 @@
 <!-- sixth section ends here -->
 
 <!-- seventh section starts  -->
-<div class="col-bin">
-    <h6>20,000+ <span style="color: #888888;;">businesses across the globe run on our platform</span></h6>
-</div>
-<div class="cr-wrapper">
-    <div class="cr-item"><img src="firefit.png" alt="" srcset="" style="height: auto;
-        width: 150px;
-        margin-right: 50px;" ></div>
-    <div class="cr-item"><img src="connect-logo.png" alt="" srcset="" style="height: auto;
-        width: 150px;
-        margin-right: 50px;" ></div>
-    <div class="cr-item"><img src="envato-small.png" alt="" style="height: auto;
-        width: 150px;
-        margin-right: 50px;" ></div>
-    <div class="cr-item"><img src="expo-new-logo.png" alt="" style="height: auto;
-        width: 150px;
-        margin-right: 50px;" ></div>
-    <div class="cr-item"><img src="hexa-small.png" alt="" srcset="" style="height: auto;
-        width: 150px;
-        margin-right: 50px;"></div>
-    <div class="cr-item" style="padding-right: 0px;"><img src="drop-logo.png" alt="" srcset="" style="height: auto;
-        width: 150px;
-        margin-right: 50px;"></div>
-</div>
-<!-- seventh section ends -->
-<!-- eight section starts -->
-<div class="lg-row" style="border: none;">
-    <div>
-        <h1>Our People</h1>
+    <div class="col-bin">
+        <h6>20,000+ <span style="color: #888888;;">businesses across the globe run on our platform</span></h6>
     </div>
-    <div class="lg-rw-txt">
-        <p>The people who make things happen in our company and who believe and build the future.</p>
+    <div class="cr-wrapper">
+        <div class="cr-item"><img src="firefit.png" alt="" srcset="" style="height: auto;
+            width: 150px;
+            margin-right: 50px;" ></div>
+        <div class="cr-item"><img src="connect-logo.png" alt="" srcset="" style="height: auto;
+            width: 150px;
+            margin-right: 50px;" ></div>
+        <div class="cr-item"><img src="envato-small.png" alt="" style="height: auto;
+            width: 150px;
+            margin-right: 50px;" ></div>
+        <div class="cr-item"><img src="expo-new-logo.png" alt="" style="height: auto;
+            width: 150px;
+            margin-right: 50px;" ></div>
+        <div class="cr-item"><img src="hexa-small.png" alt="" srcset="" style="height: auto;
+            width: 150px;
+            margin-right: 50px;"></div>
+        <div class="cr-item" style="padding-right: 0px;"><img src="drop-logo.png" alt="" srcset="" style="height: auto;
+            width: 150px;
+            margin-right: 50px;"></div>
     </div>
-</div>
-<div class="cells-4m">
-    <div class="cnt-ppl">
-        <div class="cnt-ppl-wrppr">
-            <img src="Team-1-1.jpg" alt="" style="width: 100%;">
-            <div class="cnt-ppl-ov">
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
-            </div>
+    <!-- seventh section ends -->
+    <!-- eight section starts -->
+    <div class="lg-row" style="border: none;">
+        <div>
+            <h1>Our People</h1>
         </div>
-        <h3 style="margin-top: -35px;">Justim Hammer</h3>
-        <p style="margin: 8px 0px 30px;
-        color: #888888; font-size: 15px;">FOUNDER & CEO</p>
-    </div>
-    <div class="cnt-ppl">
-        <div class="cnt-ppl-wrppr">
-            <img src="download-2.jpg" alt="" style="width: 100%;">
-            <div class="cnt-ppl-ov">
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
-            </div>
+        <div class="lg-rw-txt">
+            <p>The people who make things happen in our company and who believe and build the future.</p>
         </div>
-        <h3 style="margin-top: -35px;">Jessica Jones</h3>
-        <p style="margin: 8px 0px 30px;
-        color: #888888; font-size: 15px;">DATA SCIENTIST</p>
     </div>
-    <div class="cnt-ppl">
-        <div class="cnt-ppl-wrppr">
-            <img src="download-3.jpg" alt="" style="width: 100%;">
-            <div class="cnt-ppl-ov">
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+    <div class="cells-4m">
+        <div class="cnt-ppl">
+            <div class="cnt-ppl-wrppr">
+                <img src="Team-1-1.jpg" alt="" style="width: 100%;">
+                <div class="cnt-ppl-ov">
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+                </div>
             </div>
+            <h3 style="margin-top: -35px;">Justim Hammer</h3>
+            <p style="margin: 8px 0px 30px;
+            color: #888888; font-size: 15px;">FOUNDER & CEO</p>
         </div>
-        <h3 style="margin-top: -35px;">Barbara</h3>
-        <p style="margin: 8px 0px 30px;
-        color: #888888; font-size: 15px;">DEVELOPER</p>
-    </div>
-    <div class="cnt-ppl">
-        <div class="cnt-ppl-wrppr">
-            <img src="download-4.jpg" alt="" style="width: 100%;">
-            <div class="cnt-ppl-ov">
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+        <div class="cnt-ppl">
+            <div class="cnt-ppl-wrppr">
+                <img src="download-2.jpg" alt="" style="width: 100%;">
+                <div class="cnt-ppl-ov">
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+                </div>
             </div>
+            <h3 style="margin-top: -35px;">Jessica Jones</h3>
+            <p style="margin: 8px 0px 30px;
+            color: #888888; font-size: 15px;">DATA SCIENTIST</p>
         </div>
-        <h3 style="margin-top: -35px;">Rebacca</h3>
-        <p style="margin: 8px 0px 30px;
-        color: #888888; font-size: 15px;">UI / UX Designer</p>
-    </div>
-    <div class="cnt-ppl">
-        <div class="cnt-ppl-wrppr">
-            <img src="download-5.jpg" alt="" style="width: 100%;">
-            <div class="cnt-ppl-ov">
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+        <div class="cnt-ppl">
+            <div class="cnt-ppl-wrppr">
+                <img src="download-3.jpg" alt="" style="width: 100%;">
+                <div class="cnt-ppl-ov">
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+                </div>
             </div>
+            <h3 style="margin-top: -35px;">Barbara</h3>
+            <p style="margin: 8px 0px 30px;
+            color: #888888; font-size: 15px;">DEVELOPER</p>
         </div>
-        <h3 style="margin-top: -35px;">Jason Roy</h3>
-        <p style="margin: 8px 0px 30px;
-        color: #888888; font-size: 15px;">DEVELOPER</p>
-    </div>
-    <div class="cnt-ppl">
-        <div class="cnt-ppl-wrppr">
-            <img src="download-6.jpg" alt="" style="width: 100%;">
-            <div class="cnt-ppl-ov">
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+        <div class="cnt-ppl">
+            <div class="cnt-ppl-wrppr">
+                <img src="download-4.jpg" alt="" style="width: 100%;">
+                <div class="cnt-ppl-ov">
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+                </div>
             </div>
+            <h3 style="margin-top: -35px;">Rebacca</h3>
+            <p style="margin: 8px 0px 30px;
+            color: #888888; font-size: 15px;">UI / UX Designer</p>
         </div>
-        <h3 style="margin-top: -35px;">Katherine</h3>
-        <p style="margin: 8px 0px 30px;
-        color: #888888; font-size: 15px;">SALES & MARKETING</p>
-    </div>
-    <div class="cnt-ppl">
-        <div class="cnt-ppl-wrppr">
-            <img src="Team-7.jpg" alt="" style="width: 100%;">
-            <div class="cnt-ppl-ov">
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+        <div class="cnt-ppl">
+            <div class="cnt-ppl-wrppr">
+                <img src="download-5.jpg" alt="" style="width: 100%;">
+                <div class="cnt-ppl-ov">
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+                </div>
             </div>
+            <h3 style="margin-top: -35px;">Jason Roy</h3>
+            <p style="margin: 8px 0px 30px;
+            color: #888888; font-size: 15px;">DEVELOPER</p>
         </div>
-        <h3 style="margin-top: -35px;">John</h3>
-        <p style="margin: 8px 0px 30px;
-        color: #888888; font-size: 15px;">SYSTEM ARCHITECT</p>
-    </div>
-    <div class="cnt-ppl">
-        <div class="cnt-ppl-wrppr">
-            <img src="download-7.jpg" alt="" style="width: 100%;">
-            <div class="cnt-ppl-ov">
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
-                <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+        <div class="cnt-ppl">
+            <div class="cnt-ppl-wrppr">
+                <img src="download-6.jpg" alt="" style="width: 100%;">
+                <div class="cnt-ppl-ov">
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+                </div>
             </div>
+            <h3 style="margin-top: -35px;">Katherine</h3>
+            <p style="margin: 8px 0px 30px;
+            color: #888888; font-size: 15px;">SALES & MARKETING</p>
         </div>
-        <h3 style="margin-top: -35px;">Natasha</h3>
-        <p style="margin: 8px 0px 30px;
-        color: #888888; font-size: 15px;">CUSTOMER SUPPORT</p>
+        <div class="cnt-ppl">
+            <div class="cnt-ppl-wrppr">
+                <img src="Team-7.jpg" alt="" style="width: 100%;">
+                <div class="cnt-ppl-ov">
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+            <h3 style="margin-top: -35px;">John</h3>
+            <p style="margin: 8px 0px 30px;
+            color: #888888; font-size: 15px;">SYSTEM ARCHITECT</p>
+        </div>
+        <div class="cnt-ppl">
+            <div class="cnt-ppl-wrppr">
+                <img src="download-7.jpg" alt="" style="width: 100%;">
+                <div class="cnt-ppl-ov">
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-facebook"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-instagram"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-google-plus"></i></a>
+                    <a href="" style="padding-right: 8px; color:#fff"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+            <h3 style="margin-top: -35px;">Natasha</h3>
+            <p style="margin: 8px 0px 30px;
+            color: #888888; font-size: 15px;">CUSTOMER SUPPORT</p>
+        </div>
     </div>
-</div>
 <!-- eight section ends -->
+<!-- ninth section starts -->
+    <div style="background-color: #fafbfd;">
+
+        <div class="lg-row" style="border: none;">
+            <div>
+                <h1>Customer Reviews    </h1>
+            </div>
+            <div class="lg-rw-txt">
+                <p>Get prompt responses from a friendly, professional and knowledgable support team.</p>
+            </div>
+        </div>
+        <div class="customer-card">
+            <div class="card-left">
+                <!-- <img src="Testimonial-IMG-1.jpg" alt="" srcset="" style="height: 400px;"> -->
+            </div>
+            <div class="card-right">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 48 48" style=" fill:none;">
+                    <path fill="#369ee6" d="M5.009,38.88L5.009,38.88c0-0.459,0.28-0.882,0.712-1.036C9.381,36.539,15,31.74,15,24.011	c0-1.328-0.227-2-0.74-2c-0.601,0-1.554,1-4.26,1c-3.289,0-7-2.622-7-7.059c0-3.883,2.912-7.941,8-7.941c4.135,0,10,3.083,10,12.093	c0,12.478-9.397,17.774-14.432,19.811C5.825,40.215,5.009,39.682,5.009,38.88z">
+                    </path>
+                    <path fill="#369ee6" d="M29.009,38.88L29.009,38.88c0-0.459,0.28-0.882,0.712-1.036C33.381,36.539,39,31.74,39,24.011	c0-1.328-0.227-2-0.74-2c-0.601,0-1.554,1-4.26,1c-3.289,0-7-2.622-7-7.059c0-3.883,2.912-7.941,8-7.941c4.135,0,10,3.083,10,12.093	c0,12.478-9.397,17.774-14.432,19.811C29.825,40.215,29.009,39.682,29.009,38.88z">
+                    </path>
+                </svg>
+                <p style="font-size: 30px; padding-top: 50px;
+                line-height: 45px;">When you believe in what these people do, That makes all the difference. These people did what God couldn’t .</p>
+                <h3 style="padding-top: 100px;
+                padding-bottom: 10px;
+                font-size: 20px;">Jonathan Kent</h3>
+                <span style="font-size: 15px;
+                color: rgba(132,137,145,1);">DESIGNER</span>                
+            </div>
+        </div>
+        <div class="customer-card">
+            <div class="card-right">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 48 48" style=" fill:none;">
+                    <path fill="#369ee6" d="M5.009,38.88L5.009,38.88c0-0.459,0.28-0.882,0.712-1.036C9.381,36.539,15,31.74,15,24.011	c0-1.328-0.227-2-0.74-2c-0.601,0-1.554,1-4.26,1c-3.289,0-7-2.622-7-7.059c0-3.883,2.912-7.941,8-7.941c4.135,0,10,3.083,10,12.093	c0,12.478-9.397,17.774-14.432,19.811C5.825,40.215,5.009,39.682,5.009,38.88z">
+                    </path>
+                    <path fill="#369ee6" d="M29.009,38.88L29.009,38.88c0-0.459,0.28-0.882,0.712-1.036C33.381,36.539,39,31.74,39,24.011	c0-1.328-0.227-2-0.74-2c-0.601,0-1.554,1-4.26,1c-3.289,0-7-2.622-7-7.059c0-3.883,2.912-7.941,8-7.941c4.135,0,10,3.083,10,12.093	c0,12.478-9.397,17.774-14.432,19.811C29.825,40.215,29.009,39.682,29.009,38.88z">
+                    </path>
+                </svg>
+                <p style="font-size: 30px; padding-top: 50px;
+                line-height: 45px;">Some of the best people to do the right job for me and our agency. These guys make the job done in time.</p>
+                <h3 style="padding-top: 100px;
+                padding-bottom: 10px;
+                font-size: 20px;">Jessica Jones</h3>
+                <span style="font-size: 15px;
+                color: rgba(132,137,145,1);">BLOGGER</span>                
+            </div>
+            <div class="card-left" style="background-image: url(Testimonial-IMG-2.jpg); background-position: top;">
+                <!-- <img src="Testimonial-IMG-1.jpg" alt="" srcset="" style="height: 400px;"> -->
+            </div>
+        </div>
+        <div class="lg-row" style="border: none;">
+            <div>
+                <h1>FAQ'S</h1>
+            </div>
+            <div class="lg-rw-txt">
+                <p>Get prompt responses from a friendly, professional and knowledgable support team.</p>
+            </div>
+        </div>
+        <div class="customer-card" style="box-shadow: none;">
+            <div class="accordion">
+                <div class="accordion-tab">
+                    <input type="checkbox" id="toggle1" class="accordion-toggle" name="toggle">
+                    <label for="toggle1">What is your team size ?</label>
+                    <div class="accordion-content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, vel laboriosam. Dolor, amet veritatis. Consectetur corporis ipsa veniam, vitae suscipit nam quod quo. Doloribus laudantium repellendus, ullam animi exercitationem ut?</p>
+                    </div>
+                </div>
+                <div class="accordion-tab">
+                    <input type="checkbox" id="toggle2" class="accordion-toggle" name="toggle">
+                    <label for="toggle2">How much do you charge ?</label>
+                    <div class="accordion-content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, vel laboriosam. Dolor, amet veritatis. Consectetur corporis ipsa veniam, vitae suscipit nam quod quo. Doloribus laudantium repellendus, ullam animi exercitationem ut?</p>
+                    </div>
+                </div>
+                <div class="accordion-tab">
+                    <input type="checkbox" id="toggle3" class="accordion-toggle" name="toggle">
+                    <label for="toggle3">Do you offer support ?</label>
+                    <div class="accordion-content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, vel laboriosam. Dolor, amet veritatis. Consectetur corporis ipsa veniam, vitae suscipit nam quod quo. Doloribus laudantium repellendus, ullam animi exercitationem ut?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-tab">
+                    <input type="checkbox" id="toggle5" class="accordion-toggle" name="toggle">
+                    <label for="toggle5">Where are you located ?</label>
+                    <div class="accordion-content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, vel laboriosam. Dolor, amet veritatis. Consectetur corporis ipsa veniam, vitae suscipit nam quod quo. Doloribus laudantium repellendus, ullam animi exercitationem ut?</p>
+                    </div>
+                </div>
+                <div class="accordion-tab">
+                    <input type="checkbox" id="toggle6" class="accordion-toggle" name="toggle">
+                    <label for="toggle6">Technologies you specialised in ?</label>
+                    <div class="accordion-content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, vel laboriosam. Dolor, amet veritatis. Consectetur corporis ipsa veniam, vitae suscipit nam quod quo. Doloribus laudantium repellendus, ullam animi exercitationem ut?</p>
+                    </div>
+                </div>
+                <div class="accordion-tab">
+                    <input type="checkbox" id="toggle7" class="accordion-toggle" name="toggle">
+                    <label for="toggle7">Are available currently ?</label>
+                    <div class="accordion-content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, vel laboriosam. Dolor, amet veritatis. Consectetur corporis ipsa veniam, vitae suscipit nam quod quo. Doloribus laudantium repellendus, ullam animi exercitationem ut?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ninth section ends -->
+<!-- tenth section starts -->
+    <div class="lg-row" style="border: none;">
+        <div>
+            <h1>News & Anouncements</h1>
+        </div>
+        <div class="lg-rw-txt">
+            <p>No one misses out our latest blogs and news letter as we give out freebies every week.</p>
+        </div>
+    </div>
+    <div class="cr-wrapper" style="max-height: none; padding-right: 0px;">
+        <div class="cr-item" style="padding-right: 0px;">
+            <div class="card">
+                <div class="img-card">
+                    <img src="exp-blog.jpg" alt="" width="350px" height="350px">
+                </div>
+                <div class="txt-card">
+                    <p style="padding-top:50px;">NEWS, TECH</p>
+                    <h2 style="padding:50px 0;">By 2030, every person in the planet will have a smartphone</h2>
+                    <span>August 1, 2018</span>
+                </div>
+            </div>
+        </div>
+        <div class="cr-item" style="padding-right: 0px;">
+            <div class="card">
+                <div class="img-card">
+                    <img src="exp-blog.jpg" alt="" width="350px" height="350px">
+                </div>
+                <div class="txt-card">
+                    <p style="padding-top:50px;">NEWS, TECH</p>
+                    <h2 style="padding:50px 0;">By 2030, every person in the planet will have a smartphone</h2>
+                    <span>August 1, 2018</span>
+                </div>
+            </div>
+        </div>
+        <div class="cr-item" style="padding-right: 0px;">
+            <div class="card">
+                <div class="img-card">
+                    <img src="exp-blog.jpg" alt="" width="350px" height="350px">
+                </div>
+                <div class="txt-card">
+                    <p style="padding-top:50px;">NEWS, TECH</p>
+                    <h2 style="padding:50px 0;">By 2030, every person in the planet will have a smartphone</h2>
+                    <span>August 1, 2018</span>
+                </div>
+            </div>
+        </div>
+        <div class="cr-item" style="padding-right: 0px;">
+            <div class="card">
+                <div class="img-card">
+                    <img src="exp-blog.jpg" alt="" width="350px" height="350px">
+                </div>
+                <div class="txt-card">
+                    <p style="padding-top:50px;">NEWS, TECH</p>
+                    <h2 style="padding:50px 0;">By 2030, every person in the planet will have a smartphone</h2>
+                    <span>August 1, 2018</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- tenth section ends -->
     <div class="bigCols2 wrapper bg-img">
         <div class="col1m">
             <div class="row1m">
