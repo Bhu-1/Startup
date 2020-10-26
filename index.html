@@ -789,6 +789,52 @@
                 width: 85%;
             }
         }
+
+        .vedio-cnt{
+            color: #ffffff;
+            text-align: center;
+            background-image: url(video-bg.jpg);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 90vh;
+            background-position-x: center;
+            box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+        }
+        .vedio-heading{
+            padding-top: 140px;
+            font-size: 34px;
+            padding-bottom: 20px;
+        }
+        .vedio-txt{
+            font-size: 22px;
+            width: 100%;
+            line-height: 30px;
+            padding-bottom: 30px;
+        }
+        .ply-icon{
+            color: white;
+            width: 94px;
+            height: 92px;
+            background-color: rgba(23,129,241,1);
+            font-size: 30px;
+            border-radius: 50%;
+            animation: animate 3s linear infinite;
+            line-height: 90px;
+        }
+        @keyframes animate{
+            0%{
+                box-shadow: 0 0 0 0 rgba(23,129,241,.7), 0 0 0 0 rgba(23,129,241,.7);
+            }
+            40%{
+                box-shadow: 0 0 0 50px rgba(23,129,241,0), 0 0 0 0 rgba(23,129,241,.7);
+            }
+            80%{
+                box-shadow: 0 0 0 50px rgba(23,129,241,0), 0 0 0 30px rgba(23,129,241,0);
+            }
+            100%{
+                box-shadow: 0 0 0 0 rgba(23,129,241,0), 0 0 0 30px rgba(23,129,241,0);
+            }
+        }
     </style>
 </head>
 <body>
@@ -1128,7 +1174,17 @@
         </div>
     </div>
 <!-- sixth section ends here -->
-
+    <div class="vedio-cnt">
+        <div class="vedio-heading">
+            <h3>Watch the Vedio</h3>
+        </div>
+        <div class="vedio-txt">
+            <p>The people who made it happen and will continue to push <br> this company forward for more success</p>
+        </div>
+        <div>
+            <a href=""><i class="fas fa-play ply-icon"></i></a>
+        </div>
+    </div>
 <!-- seventh section starts  -->
     <div class="col-bin">
         <h6>20,000+ <span style="color: #888888;;">businesses across the globe run on our platform</span></h6>
